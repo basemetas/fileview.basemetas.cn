@@ -1,0 +1,23 @@
+---
+description: Fileview自定义字体安装教程，解决OFD/PDF/Office文档预览字体缺失问题，支持中文字体挂载，优化文档预览显示效果
+---
+# 字体安装
+
+为了合规，文件预览服务默认仅集成了免费的中文思源字体及部分英文字体，不包含其它商用需要授权的字体。所以在部分文档预览时会发现与原文档字体不一致。
+
+为了解决此问题，你可以自行安装通过正规渠道获取的其它字体
+
+## 一、 挂载自定义字体
+
+将容器的 `/usr/local/share/fonts` 目录挂载到宿主机，将需要的字体放进宿主机目录，启动容器即可生效
+
+## 二、 启动预览服务
+
+```bash
+docker run -itd \    
+    --name fileview \  
+    -p 9000:80 \  
+    --restart=always \  
+    -v your/fonts/path:/usr/local/share/fonts \ 
+    basemetas/fileview:latest
+```
