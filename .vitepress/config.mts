@@ -59,6 +59,12 @@ export default defineConfig({
       options: {},
     },
 
+    editLink: {
+      pattern:
+        "https://github.com/basemetas/fileview.basemetas.cn/edit/main/:path",
+      text: "在 GitHub 上编辑此页", // 自定义文字
+    },
+
     nav: [
       { text: "首页", link: "/" },
       { text: "产品介绍", link: "/docs/product/summary" },
