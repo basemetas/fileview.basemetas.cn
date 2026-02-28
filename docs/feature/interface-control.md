@@ -34,8 +34,6 @@ window.open(previewUrl, "_blank");
 
 支持嵌入模式，即没有顶部菜单的模式，便于嵌入其他系统做区域展示。
 
-#### 使用方法
-
 ```js
 // 构造参数
 const url = encodeURIComponent("https://mydomain.com/myfiles/sample.docx"); // 网络文件地址，支持 http/https/ftp
