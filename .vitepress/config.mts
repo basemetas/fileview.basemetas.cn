@@ -101,6 +101,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "字体安装", link: "/docs/feature/fonts" },
+            { text: "水印设置", link: "/docs/feature/watermark" },
             { text: "文件密码", link: "/docs/product/password" },
             { text: "预览地址", link: "/docs/product/preview-url" },
             { text: "文件存储", link: "/docs/product/storage" },
